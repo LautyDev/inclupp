@@ -1,11 +1,24 @@
 from setuptools import setup
+import pathlib
+
+here = pathlib.Path(__file__).parent.resolve()
+
+long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="inclupp",
     version="1.0.0",
     description="A CLI tool to preprocess and compile C++ files with remote #includes.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="LautyDev",
     author_email="git@lauty.dev",
+    url="https://github.com/LautyDev/inclupp",
+    project_urls={
+        "Bug Tracker": "https://github.com/LautyDev/inclupp/issues",
+        "Source": "https://github.com/LautyDev/inclupp",
+        "Documentation": "https://github.com/LautyDev/inclupp#readme",
+    },
     packages=["inclupp"],
     install_requires=[
         "requests",
