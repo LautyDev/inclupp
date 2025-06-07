@@ -7,7 +7,7 @@ import requests
 from urllib.parse import urlparse
 from colorama import init, Fore
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 init(autoreset=True)
 
